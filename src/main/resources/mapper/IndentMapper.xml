@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+    "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fh.indent.mapper.IndentMapper">
+
+
+
+    <select id="queryIndentList" resultType="com.fh.vo.IndentVo">
+       select tin.orderid,tin.id tinid,tin.`name`,tin.filepath,tin.`status`,tin.count,tor.paytype,tor.totalprice,tor.createdate,tin.price,tad.*
+        from t_order tor
+        INNER JOIN t_indent tin on tor.id = tin.orderid
+        INNER JOIN t_address tad on tor.addressid = tad.id
+    </select>
+
+</mapper>
+
