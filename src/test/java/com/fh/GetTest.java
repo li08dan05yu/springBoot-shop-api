@@ -9,7 +9,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
-public class text {
+public class GetTest {
 
     public static void main(String[] args) {
 

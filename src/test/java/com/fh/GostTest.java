@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class post {
+public class GostTest {
 
     public static void main(String[] args) {
         //1.打开浏览器
