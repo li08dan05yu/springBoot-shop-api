@@ -6,8 +6,8 @@
 <mapper namespace="com.fh.commodity.mapper.CommdityMapper">
 
 
-    <update id="updateinvent">
-        update t_commodity set inventory = inventory-#{param2} where id =#{param1} and inventory-#{param2}>=0
+    <update id="updateinvent" >
+        update t_commodity set inventory = inventory-#{count} where id =#{comId} and inventory-#{count}>=0
     </update>
 
 

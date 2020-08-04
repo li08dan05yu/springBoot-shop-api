@@ -64,7 +64,7 @@ public class CommdityServiceImpl implements CommdityService {
     @Override
     public Long updateinvent(Integer comId, Integer count) {
 
-        return  1L;
+        return  commdityMapper.updateinvent(comId,count);
     }
 
 

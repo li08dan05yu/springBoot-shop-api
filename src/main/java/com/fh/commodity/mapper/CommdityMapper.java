@@ -8,5 +8,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface CommdityMapper extends BaseMapper<Commodity> {
 
 
-    Long updateinvent(Integer comId, Integer inventory);
+    Long updateinvent(Integer comId, Integer count);
 }
